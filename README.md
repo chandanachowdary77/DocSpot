@@ -37,5 +37,5 @@ A full-stack Doctor Appointment Booking System built using the MERN stack (Mongo
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/doctor-appointment-booking-mern.git
-cd doctor-appointment-booking-mern
+git clone https://github.com/chandanachowdary77/DocSpot
+
