@@ -1,41 +1,63 @@
-# 🩺 Doctor Appointment Booking System (MERN Stack)
+# 🏥 Doctor Appointment Booking System (MERN Stack)
 
-A full-stack Doctor Appointment Booking System built using the MERN stack (MongoDB, Express.js, React.js, Node.js). This application allows users to book doctor appointments, and includes admin and doctor dashboards to manage bookings, availability, and users.
+A full-stack web application for booking doctor appointments, built using the MERN stack (MongoDB, Express.js, React.js, Node.js).
 
----
+## 📁 Project Structure
+```
+code/
+├── backend/       # Node.js + Express + MongoDB API
+└── frontend/      # React.js frontend
+```
 
-## 📦 Features
+## 🚀 Features
+- User Registration & Login with JWT
+- Role-based dashboards (Admin, User, Doctor)
+- Book & manage appointments
+- Doctor application and approval system
+- Admin panel to manage users and doctors
+- Notifications and authentication middleware
 
-- 👤 User Registration & Login (JWT Auth)
-- 🧑‍⚕️ Doctor Profile Creation & Approval
-- 📅 Book Appointments with Doctors
-- 📂 View & Manage Appointments (Patients & Doctors)
-- 🧑‍💼 Admin Dashboard (Manage Users & Doctors)
-- 🔐 Protected Routes for User, Doctor, and Admin
+## ✅ Prerequisites
+- Node.js and npm
+- MongoDB (local or Atlas)
+- Git (optional)
 
----
-
-## 🛠️ Tech Stack
-
-**Frontend:**  
-- React.js (with Vite or CRA)  
-- Axios  
-- React Router  
-- Ant Design / Tailwind / Bootstrap (based on UI used)
-
-**Backend:**  
-- Node.js  
-- Express.js  
-- MongoDB + Mongoose  
-- JWT for Authentication  
-- Bcrypt for Password Hashing
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
-
+## 🔧 Backend Setup
 ```bash
-git clone https://github.com/chandanachowdary77/DocSpot
+cd backend
+npm install
+```
+
+Create `.env` in `backend/` with:
+```
+PORT=5000
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_jwt_secret
+```
+
+Start the backend server:
+```bash
+npm start
+```
+
+## 💻 Frontend Setup
+```bash
+cd frontend
+npm install
+npm start
+```
+
+Runs on: [http://localhost:3000](http://localhost:3000)
+
+## 🌐 API & Routes Overview
+- `/api/user/*` — User authentication & operations
+- `/api/admin/*` — Admin management
+- `/api/doctor/*` — Doctor-related operations
+
+## 📚 Technologies Used
+- **Frontend:** React.js, Axios, Bootstrap, React Router
+- **Backend:** Node.js, Express.js, JWT, Mongoose
+- **Database:** MongoDB
+- **Others:** dotenv, bcryptjs, middleware
+
 
