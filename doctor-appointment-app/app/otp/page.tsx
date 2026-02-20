@@ -65,17 +65,16 @@ export default function OTPPage() {
           <div className="otp-container">
             {otp.map((digit, index) => (
               <input
-                key={index}
-                type="text"
-                maxLength={1}
-                value={digit}
-                ref={(el) => (inputsRef.current[index] = el)}
-                onChange={(e: ChangeEvent<HTMLInputElement>) =>
-                  handleChange(e.target.value, index)
-                }
-                onKeyDown={(e) => handleKeyDown(e, index)}
-                className="otp-box"
-              />
+  type="text"
+  maxLength={1}
+  value={digit}
+  ref={(el) => {
+    inputsRef.current[index] = el;
+  }}
+  onChange={(e: ChangeEvent<HTMLInputElement>) =>
+    handleChange(e.target.value, index)
+  }
+/>
             ))}
           </div>
 
@@ -86,4 +85,5 @@ export default function OTPPage() {
       </div>
     </div>
   );
+
 }
