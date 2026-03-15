@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-# Schedulla
+
+# DocSpot
 
 This is a simple Python project initialized by GitHub Copilot. It includes a basic virtual environment setup and a sample script.
 
@@ -24,7 +24,7 @@ This is a simple Python project initialized by GitHub Copilot. It includes a bas
 python main.py
 ```
 =======
-# 🩺 Schedulla - Doctor Appointment Booking App
+# 🩺 DocSpot - Doctor Appointment Booking App
 
 Schedulla is a responsive Doctor Appointment Booking Web Application built using **Next.js (App Router)** and **React**.  
 It allows users to sign up, login, browse doctors, view detailed profiles, and book appointments.
@@ -98,11 +98,11 @@ app/globals.css
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/schedulla.git
+git clone https://github.com/your-username/DocSpot
 
 Navigate into the project:
 
-cd schedulla
+cd DocSpot
 
 Install dependencies:
 
